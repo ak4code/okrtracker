@@ -1,0 +1,195 @@
+:root {
+    --primary: #6d28d9;
+    --secondary: #5b21b6;
+    --accent: #8b5cf6;
+    --primary-fg: #ffffff;
+    --header-color: #ffffff;
+    --header-branding-color: #ffffff;
+    --header-bg: #5b21b6;
+    --header-link-color: #f5f3ff;
+    --breadcrumbs-bg: #4c1d95;
+    --breadcrumbs-link-fg: #ede9fe;
+    --breadcrumbs-fg: #ffffff;
+    --button-bg: #5b21b6;
+    --button-hover-bg: #4c1d95;
+    --default-button-bg: #5b21b6;
+    --default-button-hover-bg: #4c1d95;
+    --link-fg: #5b21b6;
+    --link-hover-color: #4c1d95;
+    --selected-bg: #f5f3ff;
+    --object-tools-bg: #5b21b6;
+    --object-tools-hover-bg: #4c1d95;
+}
+
+#header {
+    background: #5b21b6;
+    box-shadow: 0 10px 30px rgba(91, 33, 182, 0.18);
+}
+
+#site-name a {
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+div.breadcrumbs {
+    background: #4c1d95;
+    border-bottom: 1px solid #3b0764;
+    color: #ffffff;
+}
+
+div.breadcrumbs a {
+    color: #ddd6fe;
+}
+
+div.breadcrumbs a:focus,
+div.breadcrumbs a:hover {
+    color: #f5f3ff;
+}
+
+a:link,
+a:visited {
+    color: #5b21b6;
+}
+
+a:focus,
+a:hover {
+    color: #4c1d95;
+}
+
+.module h2,
+.module caption,
+.inline-group h2,
+.fieldset-heading {
+    background: #5b21b6;
+    color: #f5f3ff;
+}
+
+fieldset .fieldset-heading,
+fieldset .inline-heading,
+:not(.inline-related) .collapse summary {
+    border-color: #5b21b6 !important;
+    background: #5b21b6 !important;
+    color: #f5f3ff !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.vTextField:focus,
+.vLargeTextField:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.18);
+}
+
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+a.button {
+    background: #5b21b6;
+    color: #ffffff;
+    border-color: #5b21b6;
+    border-radius: 6px;
+}
+
+.button:active,
+.button:focus,
+.button:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="button"]:hover,
+.submit-row input:active,
+.submit-row input:focus,
+.submit-row input:hover,
+a.button:active,
+a.button:focus,
+a.button:hover {
+    background: #4c1d95;
+    border-color: #4c1d95;
+    color: #ffffff;
+}
+
+.button.default,
+input[type="submit"].default,
+.submit-row input.default {
+    background: #5b21b6;
+    border-color: #5b21b6;
+    color: #ffffff;
+}
+
+.button.default:active,
+.button.default:focus,
+.button.default:hover,
+input[type="submit"].default:active,
+input[type="submit"].default:focus,
+input[type="submit"].default:hover,
+.submit-row input.default:active,
+.submit-row input.default:focus,
+.submit-row input.default:hover {
+    background: #4c1d95;
+    border-color: #4c1d95;
+    color: #ffffff;
+}
+
+.object-tools a:link,
+.object-tools a:visited {
+    background: #5b21b6;
+    color: #ffffff;
+}
+
+.object-tools a:focus,
+.object-tools a:hover {
+    background: #4c1d95;
+    color: #ffffff;
+}
+
+.theme-toggle svg.theme-icon-when-auto,
+.theme-toggle svg.theme-icon-when-dark,
+.theme-toggle svg.theme-icon-when-light {
+    fill: #ede9fe;
+    color: #5b21b6;
+}
+
+.selector .selector-chosen h2,
+.selector .selector-chosen-title {
+    background: #5b21b6;
+    color: #f5f3ff;
+    border-color: #4c1d95;
+}
+
+.selector button.selector-chooseall,
+.selector button.selector-clearall {
+    background: #5b21b6;
+    color: #ffffff;
+    border: 1px solid #5b21b6;
+    border-radius: 6px;
+}
+
+.selector button.selector-chooseall:focus,
+.selector button.selector-chooseall:hover,
+.selector button.selector-clearall:focus,
+.selector button.selector-clearall:hover {
+    background: #4c1d95;
+    border-color: #4c1d95;
+    color: #ffffff;
+}
+
+.selector .selector-available p a,
+.selector .selector-chosen p a {
+    background-color: #5b21b6;
+    color: #ffffff !important;
+    border: 1px solid #5b21b6;
+    border-radius: 6px;
+}
+
+.selector .selector-available p a:focus,
+.selector .selector-available p a:hover,
+.selector .selector-chosen p a:focus,
+.selector .selector-chosen p a:hover {
+    background-color: #4c1d95;
+    border-color: #4c1d95;
+    color: #ffffff !important;
+}

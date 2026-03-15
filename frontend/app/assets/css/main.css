@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --font-display: "Inter", "Segoe UI", sans-serif;
+  --radius-block: 24px;
+  --radius-control: 10px;
+
+  --color-ink-50: #f9fafb;
+  --color-ink-100: #f3f4f6;
+  --color-ink-200: #e5e7eb;
+  --color-ink-300: #d1d5db;
+  --color-ink-400: #9ca3af;
+  --color-ink-500: #6b7280;
+  --color-ink-600: #4b5563;
+  --color-ink-700: #374151;
+  --color-ink-800: #1f2937;
+  --color-ink-900: #111827;
+
+  --color-mint-100: #ecfdf5;
+  --color-mint-500: #16a34a;
+  --color-amber-100: #fff7ed;
+  --color-amber-500: #ea580c;
+  --color-rose-100: #fef2f2;
+  --color-rose-500: #dc2626;
+  --color-sky-100: #eff6ff;
+  --color-sky-500: #2563eb;
+}
+
+@layer base {
+  html {
+    @apply bg-ink-50 text-ink-900 antialiased;
+  }
+
+  body {
+    @apply min-h-screen font-sans;
+  }
+
+  ::selection {
+    @apply bg-sky-500/20 text-ink-900;
+  }
+}
+
+@layer components {
+  .surface {
+    @apply border border-ink-200 bg-white shadow-sm;
+    border-radius: var(--radius-block);
+  }
+
+  .surface-muted {
+    @apply border border-ink-200 bg-ink-50;
+    border-radius: var(--radius-block);
+  }
+
+  .block-radius {
+    border-radius: var(--radius-block);
+  }
+
+  .control-radius {
+    border-radius: var(--radius-control);
+  }
+
+  .grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .input-base {
+    @apply w-full border border-ink-200 bg-ink-50 px-4 py-3 text-sm text-ink-900 outline-none transition placeholder:text-ink-400 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20;
+    border-radius: var(--radius-control);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 border text-sm font-medium outline-none transition disabled:cursor-not-allowed disabled:opacity-60;
+    border-radius: var(--radius-control);
+    min-height: 42px;
+    padding: 0.65rem 1rem;
+  }
+
+  .btn-primary {
+    @apply border-transparent bg-ink-900 text-white shadow-sm hover:bg-ink-800 focus:ring-2 focus:ring-ink-900/15;
+  }
+
+  .btn-secondary {
+    @apply border-ink-200 bg-white text-ink-700 shadow-sm hover:border-ink-300 hover:bg-ink-50 focus:ring-2 focus:ring-sky-500/15;
+  }
+
+  .btn-ghost {
+    @apply border-transparent bg-transparent text-ink-600 hover:bg-ink-100 hover:text-ink-900 focus:ring-2 focus:ring-sky-500/10;
+  }
+
+  .btn-danger {
+    @apply border-rose-200 bg-rose-100/70 text-rose-500 hover:border-rose-300 hover:bg-rose-100 focus:ring-2 focus:ring-rose-500/10;
+  }
+
+  .btn-accent {
+    @apply border-transparent bg-sky-500 text-white shadow-sm hover:bg-sky-600 focus:ring-2 focus:ring-sky-500/20;
+  }
+
+  .btn-icon {
+    @apply h-10 w-10 p-0;
+    border-radius: 9999px;
+  }
+
+  .btn-sm {
+    min-height: 36px;
+    padding: 0.5rem 0.85rem;
+  }
+
+  .btn-lg {
+    min-height: 48px;
+    padding: 0.8rem 1.2rem;
+  }
+}
